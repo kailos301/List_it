@@ -1,0 +1,760 @@
+/* helper class start */
+.rtl {
+  direction: rtl !important;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+/* helper class end */
+
+/* side navbar css over write start */
+.sidebar.sidebar-style-2[data-background-color=dark2] .nav .nav-item.selected>a,
+.sidebar.sidebar-style-2[data-background-color=dark] .nav .nav-item.selected>a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.sidebar.sidebar-style-2 .nav .nav-item .selected>a {
+  background: rgba(199, 199, 199, .2);
+}
+
+/* side navbar css over write end */
+
+/* bootstrap modal customize start */
+body[data-background-color="dark"] .modal-content {
+  background: #202940;
+}
+
+body[data-background-color="dark"] .modal-header {
+  border-bottom: 1px solid rgba(181, 181, 181, .1) !important;
+}
+
+body[data-background-color="dark"] .modal-content .close {
+  color: #fff;
+}
+
+body[data-background-color="dark"] .modal-content .close:not(:disabled):not(.disabled):focus,
+body[data-background-color="dark"] .modal-content .close:not(:disabled):not(.disabled):hover {
+  color: #fff;
+}
+
+body[data-background-color="dark"] .modal-footer {
+  border-top: 1px solid rgba(181, 181, 181, .1) !important;
+}
+
+body[data-background-color="dark"] ::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  cursor: pointer;
+}
+
+/* bootstrap modal customize end */
+
+/* bootstrap form control customize start */
+body[data-background-color="dark"] .form-control[readonly] {
+  background-color: #1a2035 !important;
+  border-color: #2f374b !important;
+}
+
+body[data-background-color="dark"] .form-control[disabled] {
+  background-color: #1a2035 !important;
+  border-color: #2f374b !important;
+}
+
+/* bootstrap form control customize end */
+
+/* bootstrap image thumbnail customize start */
+.img-thumbnail {
+  max-width: 400px;
+}
+
+/* bootstrap image thumbnail customize end */
+
+/* image table preview for dropzone edit form start */
+#img-table .table-row {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+
+#img-table .table-row td i {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: #ff3737;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#img-table .table-row td {
+  padding: 0px !important;
+}
+
+.dropzone:hover {
+  background: transparent !important;
+}
+
+/* image table preview for dropzone edit form end */
+
+/* image table preview for dropzone edit form start */
+#imgtable .table-row {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#imgtable .table-row td i {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: #ff3737;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+#imgtable .table-row td {
+  padding: 0px !important;
+}
+
+.dropzone:hover {
+  background: transparent !important;
+}
+
+/* image table preview for dropzone edit form end */
+
+/* iconpicker input field start */
+.iconpicker-popover.popover .popover-title input[type=search].iconpicker-search {
+  direction: ltr !important;
+}
+
+/* iconpicker input field end */
+
+/* request loader css start */
+.request-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0000007a;
+  z-index: 10000;
+  display: none;
+}
+
+.request-loader img {
+  position: fixed;
+  display: none;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.request-loader.show {
+  display: block;
+}
+
+.request-loader.show img {
+  display: block;
+}
+
+/* request loader css end */
+
+/* summernote css start */
+.note-editor.note-frame .note-btn.note-image-btn,
+.note-editor.note-frame .note-btn.note-video-btn,
+.note-editor.note-frame .note-btn.note-link-btn {
+  border: 1px solid #31ce36 !important;
+  background: #31ce36 !important;
+}
+
+label.note-form-label {
+  color: #fff !important;
+}
+
+.note-modal label.form-check-label {
+  color: #fff !important;
+}
+
+.note-modal h4.modal-title {
+  color: #ffffff9a;
+}
+
+.sn-checkbox-open-in-new-window.form-check [type=checkbox]:checked,
+.sn-checkbox-open-in-new-window.form-check [type=checkbox]:not(:checked) {
+  left: 30px;
+}
+
+.form-check.sn-checkbox-open-in-new-window {
+  padding-left: 30px;
+}
+
+.sn-checkbox-use-protocol.form-check [type=checkbox]:checked,
+.sn-checkbox-use-protocol.form-check [type=checkbox]:not(:checked) {
+  left: 30px;
+}
+
+.form-check.sn-checkbox-use-protocol {
+  padding-left: 30px;
+}
+
+.form-check.sn-checkbox-use-protocol {
+  display: none;
+}
+
+.sn-checkbox-open-in-new-window.form-check {
+  display: none;
+}
+
+.note-editing-area .note-placeholder {
+  color: #16181b;
+  font-weight: 600;
+}
+
+/* summernote css end */
+
+/* summernote rtl css start */
+.note-editor.note-frame .note-editing-area .note-editable.rtl {
+  text-align: right !important;
+}
+
+/* summernote rtl css end */
+
+.list-group .list-group-item {
+  display: block;
+}
+
+#myEditor li.list-group-item {
+  cursor: move;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+body[data-background-color="dark"] .custom-file-label::after {
+  color: #fff;
+  background-color: #1a2035;
+  border-left: 1px solid #2f374b;
+}
+
+body[data-background-color="dark"] label.custom-file-label {
+  background-color: #1a2035;
+  border: 1px solid #2f374b;
+}
+
+.messages-container {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.dropdown-menu button.deleteBtn {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  padding: .25rem 1.5rem;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu button.deleteBtn:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+/* GJS Container CSS */
+.my-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 300px;
+}
+
+/* Accordion Customize */
+.version {
+  border: 1px solid #0000003a;
+  margin-bottom: 20px;
+}
+
+.version-header button[aria-expanded=true] {
+  background-color: #6861CE !important;
+  color: #fff;
+}
+
+.version-header button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.version-header button:hover,
+.version-header button:focus {
+  text-decoration: none !important;
+}
+
+body:not([data-background-color="dark"]) .version-header button {
+  color: #0056b3;
+}
+
+body:not([data-background-color="dark"]) .version-header button[aria-expanded="true"],
+body[data-background-color="dark"] .version-header button[aria-expanded="false"]:hover {
+  color: #fff;
+}
+
+.version-header button i {
+  margin-right: 10px;
+}
+
+.version-body .list-group button {
+  color: #fff;
+  padding-left: 60px;
+  font-size: 16px;
+  position: relative;
+}
+
+.version-body .list-group button::before {
+  content: '\f101';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.version-body .list-group button a {
+  border-radius: 50px;
+  float: right;
+  margin-right: 30px;
+}
+
+.version-body .list-group button a.activated {
+  cursor: auto;
+  background-color: #31CE36 !important;
+  border: 1px solid #31CE36 !important;
+}
+
+/* Jquery Timepicker */
+.ui-timepicker-container.ui-timepicker-no-scrollbar.ui-timepicker-standard {
+  position: absolute;
+  transform: translateY(0px);
+  max-height: 230px;
+  overflow-y: scroll;
+  max-width: 160px;
+  overflow-x: hidden;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+}
+
+@media only screen and (min-width: 768px) {
+  .my-container {
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .my-container {
+    width: 970px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .my-container {
+    width: 1170px;
+  }
+
+  .card-header-button {
+    margin-top: 42px;
+  }
+}
+
+.thumb-preview {
+  background: #f1f1f1;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.thumb-preview img {
+  max-width: 100%;
+}
+
+#uploadForm>.dz-default.dz-message {
+  padding: 6rem 0 !important;
+}
+
+.datepicker-days th,
+.datepicker-days td {
+  color: #212529 !important;
+}
+
+.datepicker-days th.active,
+.datepicker-days td.active {
+  color: #fff !important;
+}
+
+.dashboard-items a:hover,
+.popup-type a:hover,
+.product-type a:hover {
+  text-decoration: none;
+}
+
+.form-group .upload-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-group .upload-btn .img-input,
+.form-group .upload-btn .img-input2,
+.form-group .upload-btn .img-input3,
+.thumb-img-input,
+.cover-img-input,
+.background-img-input,
+.preloader-input {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  margin: 0;
+  border: solid transparent;
+  width: 112px;
+  opacity: 0;
+}
+
+.product-type .card.card-stats.card-round {
+  padding: 50px 0;
+}
+
+.product-type .card-stats .icon-big {
+  border-radius: 50%;
+}
+
+.product-type .card-category {
+  font-size: 20px;
+}
+
+.product-type .card-stats .card-title {
+  margin-bottom: 0px !important;
+  margin: 15px 0px 10px !important;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.card-orchid {
+  background-color: #DA70D6 !important;
+}
+
+.card-orchid .icon-big>i {
+  color: #ffffff !important;
+}
+
+.card-dark .card-category,
+.card-orchid .card-category,
+.card-orchid .card-title {
+  color: #ffffff !important;
+}
+
+.note-editor.note-frame.card {
+  margin-bottom: 7px;
+}
+
+/* Summernote Content CSS Overwrite Start */
+.note-editor.note-frame .note-editing-area .note-editable article,
+.note-editor.note-frame .note-editing-area .note-editable aside,
+.note-editor.note-frame .note-editing-area .note-editable details,
+.note-editor.note-frame .note-editing-area .note-editable figcaption,
+.note-editor.note-frame .note-editing-area .note-editable figure,
+.note-editor.note-frame .note-editing-area .note-editable footer,
+.note-editor.note-frame .note-editing-area .note-editable header,
+.note-editor.note-frame .note-editing-area .note-editable hgroup,
+.note-editor.note-frame .note-editing-area .note-editable menu,
+.note-editor.note-frame .note-editing-area .note-editable nav,
+.note-editor.note-frame .note-editing-area .note-editable section {
+  display: block;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable i,
+.note-editor.note-frame .note-editing-area .note-editable span,
+.note-editor.note-frame .note-editing-area .note-editable a {
+  display: inline;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable p {
+  margin: 0px;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable th,
+.note-editor.note-frame .note-editing-area .note-editable td {
+  font-size: 14px;
+  border-top-width: 0px;
+  border-bottom: 1px solid;
+  border-color: #ebedf2 !important;
+  padding: 0 25px !important;
+  height: 60px;
+  vertical-align: middle !important;
+  color: #000;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable a:hover,
+.note-editor.note-frame .note-editing-area .note-editable a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable a:focus,
+.note-editor.note-frame .note-editing-area .note-editable input:focus,
+.note-editor.note-frame .note-editing-area .note-editable textarea:focus,
+.note-editor.note-frame .note-editing-area .note-editable button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable h1,
+.note-editor.note-frame .note-editing-area .note-editable h2,
+.note-editor.note-frame .note-editing-area .note-editable h3,
+.note-editor.note-frame .note-editing-area .note-editable h4 {
+  font-weight: 700;
+}
+
+/* Summernote Content CSS Overwrite End */
+
+body[data-background-color="dark"] .table {
+  color: rgba(169, 175, 187, 0.82) !important;
+}
+
+select.bg-primary,
+select.bg-success,
+select.bg-danger {
+  color: #fff !important;
+}
+
+.navbar-header[data-background-color="white2"] {
+  background: rgba(199, 199, 199, 0.2);
+}
+
+body[data-background-color="white"] .card-dark {
+  background: #202940;
+}
+
+body[data-background-color="dark"] div.wrapper div.main-panel h2 {
+  color: #fff;
+}
+
+body[data-background-color="white"] .bootstrap-tagsinput {
+  background-color: #fff !important;
+  border-color: #ebedf2;
+}
+
+body[data-background-color="white"] .bootstrap-tagsinput input {
+  color: #495057;
+}
+
+.datepicker:hover,
+.timepicker:hover {
+  cursor: pointer;
+}
+
+/* select2 css start */
+.select2-container--default .select2-selection--single {
+  height: 45px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 42px;
+  padding-left: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent;
+  margin-top: 6px;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select-auto .select2-container {
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.select-auto .select2-container--default .select2-selection--multiple {
+  height: inherit !important;
+  padding: .4rem 1rem;
+}
+
+[data-background-color="white"] .select-auto .select2-container--default .select2-selection--multiple {
+  border-color: #ebedf2;
+}
+
+[data-background-color="dark"] .select-auto .select2-container--default .select2-selection--multiple {
+  background-color: #1a2035;
+  color: rgba(169, 175, 187, 0.92);
+  border-color: #2f374b;
+}
+
+[data-background-color="dark"] .select2-container--default .select2-search--dropdown .select2-search__field {
+  border-color: #2f374b;
+}
+
+[data-background-color="dark"] .select2-search__field {
+  color: rgba(210, 210, 210, 0.92);
+  background-color: transparent;
+}
+
+[data-background-color="dark"] .select2-dropdown {
+  background-color: #202940;
+  color: rgba(169, 175, 187, 0.92);
+  border-color: #2f374b;
+}
+
+[data-background-color="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #202940;
+  border: 1px solid #2f374b;
+}
+
+[data-background-color="dark"] .select2-container--default .select2-results__option--selected,
+[data-background-color="dark"] .select2-results__option.select2-results__option--selectable.select2-results__option--selected.select2-results__option--highlighted {
+  background-color: rgba(199, 199, 199, 0.2);
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-block {
+  display: block;
+}
+
+.h-42 {
+  height: 42px !important;
+}
+
+.minw-230 {
+  min-width: 230px;
+}
+
+.wf-150 {
+  width: 150px;
+}
+
+.ws-normal {
+  white-space: normal;
+}
+
+/* select2 css end */
+.select2-container--default .select2-selection--single {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  font-size: 14px;
+  border-color: #ebedf2;
+  padding: 0.6rem 1rem;
+  height: inherit !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+  line-height: inherit;
+}
+
+body[data-background-color="dark"] .select2-container--default .select2-selection--single {
+  background-color: #1a2035;
+  color: #fff;
+  border-color: #2f374b;
+}
+
+body[data-background-color="dark"] .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  max-height: 600px;
+  height: 150px;
+}
+
+#variation_pricing .table td {
+  padding: 0px !important;
+}
+
+#variation_pricing .table td .btn-danger {
+  margin-left: 25px !important;
+}
+
+span.tox-statusbar__branding {
+  display: none;
+}
+
+.admin-vendor-photo {
+  max-height: 80px;
+  border-radius: 50%;
+}
+
+.mar--3 {
+  margin-right: -3px;
+  margin-right: -3px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+
+.messages-container .item-list {
+  align-items: start;
+}

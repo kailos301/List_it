@@ -1,0 +1,85 @@
+{
+  "name": "laravel/laravel",
+  "type": "project",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0.2",
+    "academe/omnipay-authorizenetapi": "^3.1",
+    "anandsiddharth/laravel-paytm-wallet": "^2.0",
+    "anhskohbo/no-captcha": "^3.3",
+    "barryvdh/laravel-dompdf": "^2.0.0",
+    "cartalyst/stripe-laravel": "^14.0.0",
+    "fideloper/proxy": "^4.4",
+    "fruitcake/laravel-cors": "^2.0",
+    "guzzlehttp/guzzle": "^7.0.1",
+    "kreativdev/installer": "^1.0",
+    "laravel-notification-channels/webpush": "^7.0.0",
+    "laravel/framework": "^9.0",
+    "laravel/socialite": "^5.5",
+    "laravel/tinker": "^2.5",
+    "maatwebsite/excel": "^3.1",
+    "mews/purifier": "^3.3",
+    "mollie/laravel-mollie": "^2.0",
+    "omnipay/common": "^3.2",
+    "paypal/rest-api-sdk-php": "^1.14",
+    "php-http/guzzle7-adapter": "^1.0",
+    "phpmailer/phpmailer": "^6.4",
+    "razorpay/razorpay": "2.*",
+    "spatie/laravel-cookie-consent": "^3.2.2"
+  },
+  "require-dev": {
+    "spatie/laravel-ignition": "^1.0",
+    "fakerphp/faker": "^1.9.1",
+    "laravel/sail": "^1.0.1",
+    "mockery/mockery": "^1.4.2",
+    "nunomaduro/collision": "^6.1",
+    "phpunit/phpunit": "^9.3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    },
+    "files": [
+      "app/Http/Helpers/Helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate --ansi"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

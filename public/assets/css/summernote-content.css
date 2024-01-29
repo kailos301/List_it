@@ -1,0 +1,118 @@
+/* START: RESET CSS for Summernote Content */
+.summernote-content * {
+  margin: initial;
+  padding: initial;
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+
+.summernote-content article,
+.summernote-content aside,
+.summernote-content details,
+.summernote-content figcaption,
+.summernote-content figure,
+.summernote-content footer,
+.summernote-content header,
+.summernote-content hgroup,
+.summernote-content menu,
+.summernote-content nav,
+.summernote-content section {
+  display: block;
+}
+
+.summernote-content i,
+.summernote-content span,
+.summernote-content a {
+  display: inline;
+}
+
+/* END: RESET CSS for Summernote Content */
+
+/* START: UL, OL style for summernote content */
+.summernote-content ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.summernote-content ul li {
+  list-style: disc;
+}
+
+.summernote-content ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.summernote-content ol li {
+  list-style-type: decimal;
+}
+
+/* END: UL, OL style for summernote content */
+
+/* START: TABLE style for summernote content */
+.summernote-content .table td,
+.summernote-content .table th {
+  font-size: 14px;
+  border-top-width: 0px;
+  border-bottom: 1px solid;
+  border: 1px solid #ebedf2 !important;
+  padding: 0 25px !important;
+  height: 60px;
+  vertical-align: middle !important;
+  color: #000;
+}
+
+/* END: TABLE style for summernote content */
+
+/* START: BLOCKQUOTE style for summernote content */
+.summernote-content blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+
+/* END: BLOCKQUOTE style for summernote content */
+
+/* START: PRE, CODE style for summernote content */
+.summernote-content code,
+.summernote-content kbd,
+.summernote-content pre,
+.summernote-content samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.summernote-content pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul#anetErrors {
+  display: block;
+  list-style-type: inherit;
+  width: 100%;
+  padding-left: 39px;
+  margin-top: 10px;
+}
+
+/* END: PRE, CODE style for summernote content */

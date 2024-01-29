@@ -1,0 +1,99 @@
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .header-area-one .header-navigation .header-right-nav ul.social-link li {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .header-area-two .header-top-bar .top-left span {
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-post-item-one .entry-content .post-meta ul li span {
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .blog-share ul li {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-area-one .footer-widget .widget.footer-widget-nav,
+  .footer-area-one .footer-widget .widget.contact-info-widget {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-area-one .footer-widget .widget.footer-widget-nav {
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+
+  .footer-area-one .footer-widget .widget.contact-info-widget {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-wrapper-two .hero-content p {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .header-area-two .header-right-nav .cart-button {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  .header-area-two .header-navigation .header-right-nav .user-info a {
+    margin-left: 0px;
+    margin-right: 9px;
+  }
+
+  .header-area-two .header-navigation .navbar-toggler {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .newsletter-wrapper-one .newsletter-form .newsletter-btn {
+    left: auto;
+    right: auto;
+  }
+
+  .blog-share ul li {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .blog-post-item-two .entry-content .post-meta ul li:last-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+  .header-area-two .header-right-nav .cart-button {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+
+  .header-area-two .header-navigation .header-right-nav .user-info a {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .header-area-two .header-navigation .navbar-toggler {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}

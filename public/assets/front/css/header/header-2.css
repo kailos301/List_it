@@ -1,0 +1,47 @@
+/* -----------------------------------------
+	Header 2 CSS
+----------------------------------------- */
+@media (min-width: 1200px) {
+    .header-area.header-2:not(.is-sticky) .nice-select li {
+        color: var(--color-dark);
+    }
+
+    .header-area.header-2 .btn-outline {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+    .header-area.header-2 .custom-container {
+      margin-top: 20px;
+      padding:0 15px;
+      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-sm);
+      background-color: var(--color-white);
+      transition: all .2s;
+    }
+    .header-area.header-2.is-sticky .custom-container{
+      background-color: transparent !important;
+      margin-top: 0;
+      padding-inline: 10px;
+      box-shadow: unset;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header-area.header-2:not(.is-sticky) {
+    background-color: transparent !important;
+    backdrop-filter: unset;
+    box-shadow: unset;
+  }
+  .header-area.header-2 .main-responsive-nav > .container{
+    margin-top: 15px;
+    padding:0 15px;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-white);
+  }
+  .header-area.header-2.is-sticky .main-responsive-nav > .container{
+    background-color: transparent !important;
+    margin-top: 0;
+    padding-inline: 10px;
+    box-shadow: unset;
+  }
+}

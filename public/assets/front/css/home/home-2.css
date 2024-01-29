@@ -1,0 +1,72 @@
+/*   
+
+    * This file contains the styling for the Home Variation Two, this
+    is the file you need to edit to change the look of the
+    template.
+
+******************************************************
+*****************************************************/
+/* -----------------------------------------
+	Hero Banner CSS
+----------------------------------------- */
+.hero-banner.hero-banner-2 {
+  padding-top: 140px;
+  padding-bottom: 20px;
+  padding-bottom: 60px;
+  background-image:url("https://listit.ie/assets/img/63c8f9ac5c631.jpg");
+
+}
+.hero-banner.hero-banner-2 .form-wrapper {
+  position: relative;
+  border-radius: 0 15px 15px 15px;
+  z-index: 3;
+}
+.hero-banner.hero-banner-2 .title span {
+  color: var(--color-primary);
+}
+.hero-banner.hero-banner-2 .right-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+}
+.hero-banner.hero-banner-2 .right-content .overlap {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(var(--color-primary-rgb), 1);
+  background-size: cover;
+  border-radius: 30px 0 0 30px;
+  z-index: -1;
+}
+.hero-banner.hero-banner-2 .right-content::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 100%;
+  background: url(../../images/banner/banner-bg-1.png) no-repeat center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+.hero-banner.hero-banner-2 .right-content .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
+}
+.hero-banner.hero-banner-2 .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-white);
+}
+.main-navbar{
+  background-color: var(--color-white);
+  border-bottom: 2px solid var(--color-primary);
+}

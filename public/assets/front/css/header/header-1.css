@@ -1,0 +1,35 @@
+/* -----------------------------------------
+	Header 1 CSS
+----------------------------------------- */
+.header-area.header-1 {
+  box-shadow: none;
+}
+@media (min-width: 1200px) {
+  .header-area.header-1 :is(.nav-link:not(:is(.active, .menu-dropdown .nav-link)), .btn-icon, .nice-select, .nice-select::after) {
+    color: var(--color-white) !important;
+  }
+  .header-area.header-1 .nav-link.active {
+    color: var(--color-primary);
+  }
+  .header-area.header-1 .nice-select::after {
+    color: var(--color-white);
+  }
+  .header-area.header-1 .nice-select li {
+    color: var(--color-dark);
+  }
+}
+.header-area.header-1.is-sticky {
+  background: rgba(var(--color-dark-rgb), 0.9);
+}
+
+@media (max-width: 1199px) {
+  .header-area.header-1 {
+    background: rgba(var(--color-dark-rgb), 0.9);
+  }
+  .header-area.header-1 .menu-toggler span {
+    background: var(--color-primary);
+  }
+  .header-area.header-1.is-sticky .nav-link.active {
+    color: var(--color-primary);
+  }
+}

@@ -1,0 +1,478 @@
+.gap-20 {
+  gap: 20px;
+}
+
+.icon-start i {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+/* -----------------------------------------
+    Page-title CSS
+----------------------------------------- */
+.page-title .author {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #fff;
+}
+.author-name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #fff;
+}
+.author-name h6 {
+  padding-inline-end: 10px;
+  border-inline-end: 1px solid #f2f2f2;
+}
+/* -----------------------------------------
+    Ratings CSS
+----------------------------------------- */
+.ratings {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.ratings .rate {
+  background-image: url(../img/rating-star.png);
+  background-position: 0 -13px;
+  background-repeat: repeat-x;
+  height: 13px;
+  transition: all 0.5s ease-out 0s;
+  width: 95px;
+}
+.ratings .rating-icon {
+  background-image: url(../img/rating-star.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  height: 13px;
+  width: 80%;
+}
+.ratings .ratings-total {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+/* -----------------------------------------
+    Author/Vendor CSS
+----------------------------------------- */
+.author-area .font-sm {
+  font-size: 14px;
+}
+.author-area .author-tabs .nav {
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.author-area .author-tabs .nav::-webkit-scrollbar {
+  height: 5px;
+}
+
+.author-area .author-tabs .nav::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+.author-area .author-tabs .nav::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgba(69, 69, 69, .2);
+}
+.author-area .author-tabs .nav li{
+  flex: 0 0 auto;
+}
+
+.author-area .author-tabs .nav-link {
+  position: relative;
+  border-radius: 0px;
+  border: none;
+  margin-bottom: 0px;
+  color: var(--heading-color);
+  padding: 0;
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+.author-area .author-tabs .nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.author-area .author-tabs .nav-link:is(.active) {
+  color: var(--primary-color);
+}
+.author-area .author-tabs .nav-link:is(.active)::after {
+  visibility: visible;
+  opacity: 1;
+}
+.author-area .product-default .author a {
+  color: var(--primary-color);
+}
+.author-area .product-default .author a:hover {
+  color: var(--primary-color);
+}
+.author-area .btn-groups {
+  gap: 10px;
+}
+.author-area .btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: var(--heading-color);
+}
+.author-area .btn-icon:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.author-area .btn {
+  border-radius: 0;
+  font-size: 14px;
+}
+.author-area .btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.author-area .review-progresses .review-progress:not(:last-child) {
+  margin-bottom: 5px;
+}
+.author-area .review-progresses .progress {
+  height: 12px;
+}
+.author-area .review-box .review-item {
+  padding: 30px;
+  background-color: var(--light-gray);
+}
+.author-area .review-box .review-item .review-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.author-area .review-box .review-item .review-header .author-img {
+  max-width: 70px;
+}
+.author-area .review-box .review-reply {
+  padding: 30px;
+  --color-medium: var(--heading-color);
+}
+.author-area .review-box .review-reply .icon {
+  font-size: 24px;
+}
+.author-area .review-box .more-info i {
+  color: var(--primary-color);
+}
+.author-area .review-box .message {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+}
+.author-area .review-submit .author {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.author-area .review-submit .author .author-img {
+  flex: 0 0 auto;
+  width: 50px;
+}
+.author-area .review-submit .rating-btns {
+  display: flex;
+  align-items: center;
+}
+.author-area .review-submit .rating-btns button {
+  color: var(--primary-color);
+  font-size: 20px;
+  background-color: transparent;
+}
+.author-area .review-submit textarea.form_control {
+  border: 1px solid #e5e5e5;
+  height: 150px;
+}
+.author-area .review-submit .form_group ul.rating li {
+  margin-bottom: 10px;
+}
+.author-area .review-submit .form_group ul.rating li:after {
+  display: inline-block;
+  content: "|";
+  margin-left: 10px;
+  margin-right: 7px;
+}
+.author-area .review-submit .form_group ul.rating li:last-child:after {
+  display: none;
+}
+.author-area .review-submit .form_group ul.rating li:hover span {
+  color: var(--primary-color);
+}
+.author-area .card {
+  border-radius: 0;
+}
+.author-area .card.card-center {
+  align-items: center;
+  text-align: center;
+}
+.author-area .card .card-img {
+  max-width: 80px;
+}
+.author-area .card .btn-text {
+  color: var(--heading-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.author-area .card .btn-text:hover {
+  color: var(--primary-color);
+}
+.author-area .badge-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.author-area .badge-list > * {
+  flex: 0 0 auto;
+  width: 25px;
+}
+.author-area .widget-nav a {
+  display: block;
+}
+.author-area .widget-nav li:not(.open) .menu-collapse {
+  display: none;
+}
+.author-area .authors-search-filter .search-filter-form {
+  background-color: var(--heading-color);
+  padding: 25px 30px;
+}
+.author-area .authors-search-filter .search-filter-form .form_control {
+  height: 50px;
+}
+.author-area .authors-search-filter .search-filter-form .nice-select {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0px;
+}
+.author-area .authors-search-filter .search-filter-form .search-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+}
+
+.contact-modal .modal-dialog {
+  max-width: 767px;
+}
+.contact-modal .modal-content {
+  border: none;
+  border-radius: 0;
+}
+.contact-modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0 0 0 10px;
+  opacity: 1;
+  float: none;
+  padding: 0;
+  margin: 0;
+  background: var(--heading-color);
+  z-index: 1;
+}
+
+/* -----------------------------------------
+	Pagination CSS
+----------------------------------------- */
+.pagination-nav {
+  padding-top: 20px;
+}
+.pagination-nav .page-link {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  padding: 0;
+  font-size: 16px;
+  border-color: transparent;
+}
+.pagination-nav .page-item:first-child .page-link,
+.pagination-nav .page-item:last-child .page-link {
+  border-radius: 0;
+}
+.pagination-nav .page-item.active .page-link, .pagination-nav .page-item:hover .page-link {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+.pagination-nav .page-item.next, .pagination-nav .page-item.prev {
+  border: none;
+}
+.pagination-nav .page-item.next:hover, .pagination-nav .page-item.prev:hover {
+  color: var(--primary-color);
+  background: transparent;
+}
+
+/* -----------------------------------------
+	Sidebar Widget CSS
+----------------------------------------- */
+.sidebar-widget-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15%;
+}
+.sidebar-widget-area .widget {
+  overflow: hidden;
+  padding-inline: 40px;
+}
+.sidebar-widget-area .widget .title {
+  margin-bottom: 0;
+  margin-top: -2px;
+}
+.sidebar-widget-area .widget .list-group li {
+  display: block;
+  color: var(--color-medium);
+}
+.sidebar-widget-area .widget .list-group li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sidebar-widget-area .widget .list-group a {
+  color: inherit;
+}
+.sidebar-widget-area .widget .show-more-btn {
+  display: block;
+  text-align: center;
+}
+.sidebar-widget-area .widget .single-method {
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-widget-area .widget .tabs-navigation-3 .nav {
+  align-items: center;
+}
+.sidebar-widget-area .widget .tabs-navigation-3 .nav .nav-link {
+  padding: 10px 22px;
+  margin: 0;
+  font-size: var(--font-sm);
+  border-radius: 0 0 5px 5px !important;
+}
+.sidebar-widget-area .widget-author-details {
+  position: relative;
+  margin-top: 30px;
+  overflow: visible;
+  z-index: 1;
+}
+.sidebar-widget-area .widget-author-details .author .author-img {
+  margin-top: -60px;
+  margin-inline: auto;
+  width: 80px;
+}
+.sidebar-widget-area .widget-author-details .author .author-info h6{
+  line-height: 1.2;
+}
+.sidebar-widget-area .widget-author-details b {
+  color: var(--heading-color);
+}
+.sidebar-widget-area .widget-shared-author .shared-author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.sidebar-widget-area .widget-shared-author .shared-author:last-child {
+  margin-bottom: 0 !important;
+}
+.sidebar-widget-area .widget-shared-author .shared-author .shared-author-img {
+  flex: 0 0 auto;
+  width: 60px;
+}
+.sidebar-widget-area .widget-business-days .list-group li {
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sidebar-widget-area .widget-business-days .list-group li > * {
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+.sidebar-widget-area .widget-business-days .list-group li .open-t {
+  color: var(--success);
+}
+.sidebar-widget-area .widget-business-days .list-group li .close-t {
+  color: var(--danger);
+}
+.sidebar-widget-area .widget .toggle-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.sidebar-widget-area .widget .toggle-list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sidebar-widget-area .widget .toggle-list li span {
+  display: flex;
+}
+.sidebar-widget-area .widget .toggle-list li .first {
+  color: var(--heading-color);
+  font-weight: 500;
+  margin-bottom: 0;
+  flex: 0 0 35%;
+}
+.sidebar-widget-area .widget .toggle-list li .last {
+  font-size: var(--font-sm);
+  flex: 0 0 65%;
+}
+
+.click-show {
+  position: relative;
+  overflow: hidden;
+  max-height: 85px;
+}
+
+.click-show.show {
+  max-height: 100% !important;
+}
+.click-show.show::after {
+  opacity: 0;
+}
+
+.read-more-btn {
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 0;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.show-more-btn {
+  cursor: pointer;
+  color: var(--primary-color);
+}/*# sourceMappingURL=update.css.map */
+
